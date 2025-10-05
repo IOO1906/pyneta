@@ -1,6 +1,9 @@
 import requests
 
+url = "https://httpbin.org/get"
+response = requests.get(url)
 
-print("Welcome")
-print("Bye")
+print("Status Code:", response.status_code)
+print("Resonse Body:", response.text)
+
 
